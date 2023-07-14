@@ -92,8 +92,8 @@ func TestMultiFilePack(t *testing.T) {
 		return
 	}
 
-	if rf.file_count != 5 {
-		t.Errorf("Expected file_count = %d, but got %d", 5, rf.file_count)
+	if rf.FileCount() != 5 {
+		t.Errorf("Expected file_count = %d, but got %d", 5, rf.FileCount())
 	}
 
 	// Check files

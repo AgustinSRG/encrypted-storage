@@ -74,16 +74,16 @@ func TestFileBlockEncrypt(t *testing.T) {
 		return
 	}
 
-	if rs.file_size != size {
-		t.Errorf("Expected file_size = (%d), but got (%d)", size, rs.file_size)
+	if rs.FileSize() != size {
+		t.Errorf("Expected file_size = (%d), but got (%d)", size, rs.FileSize())
 	}
 
-	if rs.block_size != TEST_BLOCK_SIZE {
-		t.Errorf("Expected block_size = (%d), but got (%d)", TEST_BLOCK_SIZE, rs.block_size)
+	if rs.BlockSize() != TEST_BLOCK_SIZE {
+		t.Errorf("Expected block_size = (%d), but got (%d)", TEST_BLOCK_SIZE, rs.BlockSize())
 	}
 
-	if rs.block_count != ws.block_count {
-		t.Errorf("Expected block_count = (%d), but got (%d)", ws.block_count, rs.block_count)
+	if rs.BlockCount() != ws.block_count {
+		t.Errorf("Expected block_count = (%d), but got (%d)", ws.block_count, rs.BlockCount())
 	}
 
 	buf2 := make([]byte, 269*1024)
