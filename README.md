@@ -1,6 +1,6 @@
 # Encrypted storage tools
 
-This library implement a collection of tools to create an encrypted storage:
+This library implements a collection of tools to create an encrypted storage:
 
  - Functions to encrypt and decrypt, using `AES-256`, with the option to compress the data using `ZLIB`.
  - Read and write streams to create anb read encrypted files in chunks.
