@@ -36,7 +36,7 @@ The encrypted data returned by `EncryptFileContents` and accepted by `DecryptFil
 
 The system is flexible enough to allow multiple encryption algorithms. Currently, there are 2 supported ones:
 
- - `AES256_FLAT`: ID = `1`, Uses ZLIB ([RFC 1950](https://datatracker.ietf.org/doc/html/rfc1950)) to compress the data, and then uses AES with a key of 256 bits to encrypt the data, CBC as the mode of operation and an IV of 128 bits. This algorithm uses a header containing the following fields:
+ - `AES256_ZIP`: ID = `1`, Uses ZLIB ([RFC 1950](https://datatracker.ietf.org/doc/html/rfc1950)) to compress the data, and then uses AES with a key of 256 bits to encrypt the data, CBC as the mode of operation and an IV of 128 bits. This algorithm uses a header containing the following fields:
 
 | Starting byte | Size (bytes) | Value name                | Description                                                        |
 | ------------- | ------------ | ------------------------- | ------------------------------------------------------------------ |
